@@ -1,0 +1,45 @@
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 0.5em;
+}
+input{
+    width: 400px;
+    height: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    outline: none;
+}
+input:focus{
+    border: 1px solid black;
+}
+#btn{
+    background-color: rgb(50, 101, 155);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 100px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(25, 55, 87);
+}
+label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(53, 52, 52);
+}
+h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(53, 52, 52);
+   
+
+}

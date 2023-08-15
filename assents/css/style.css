@@ -1,8 +1,15 @@
-section{
+.inputs{
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 10px;
     gap: 0.5em;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:400px ;
 }
 input{
     width: 400px;
@@ -14,7 +21,8 @@ input{
 input:focus{
     border: 1px solid black;
 }
-#btn{
+#btn,
+#btn-cadastro{
     background-color: rgb(50, 101, 155);
     color: #fff;
     font-size: 1.1em;
@@ -25,7 +33,6 @@ input:focus{
     border: none;
     outline: none;
     margin-top: 20px;
-    margin-left: 100px;
     transition-duration: 0.5s;
     cursor: pointer;
 }
@@ -38,8 +45,17 @@ label{
 }
 h1{
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(53, 52, 52);
-   
+}
+.cadastrados{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
 
+}
+.cadastrados > p{
+    font-family:'Courier New', Courier, monospace ;
+    font-size: 1.3em;
+    font-weight: bolder;
 }

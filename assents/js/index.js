@@ -63,7 +63,7 @@
   }
 
   function salvarVeiculos() {
-    localStorage.setItem(`veiculos`, JSON.stringify(arrObjetos));
+    localStorage.setItem(`veiculos`, JSON.stringify(arrayObj()));
     // Salvar os objetos do array criado no localStorage
   }
 })();

@@ -1,33 +1,56 @@
-.inputs{
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+  :root{
+    --Roboto:'Roboto', sans-serif;
+    --Rowdies:'Rowdies', cursive;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-family:var(--Roboto);
+    color: rgb(53, 52, 52);
+    padding: 20px;
+}
+section{
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
     gap: 0.5em;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
 }
 .buttons{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width:400px ;
+    justify-content: center;
+    width: 100%;
 }
 input{
-    width: 400px;
-    height: 15px;
-    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    height: 20px;
+    font-family: var(--Roboto);
+    font-size: 1em;
     padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
     outline: none;
+    transition-duration: 0.5px;
 }
-input:focus{
-    border: 1px solid black;
+input:hover{
+ padding: 6px;
 }
-#btn,
-#btn-cadastro{
+#btn{
     background-color: rgb(50, 101, 155);
     color: #fff;
     font-size: 1.1em;
     font-weight: bold;
-    width: 180px;
+    width: 10em;
     height: 40px;
     border-radius: 10px;
     border: none;
@@ -40,22 +63,33 @@ input:focus{
     background-color: rgb(25, 55, 87);
 }
 label{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--Rowdies);
+    font-size: 1.2em;
+    font-weight: 200;
     color: rgb(53, 52, 52);
 }
-h1{
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(53, 52, 52);
-}
-.cadastrados{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
 
+a{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(199, 25, 25);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 10em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+    transition-duration: 0.5s;
+    cursor: pointer;
+  
 }
-.cadastrados > p{
-    font-family:'Courier New', Courier, monospace ;
-    font-size: 1.3em;
-    font-weight: bolder;
+a:hover{
+    background-color: rgb(158, 16, 16);
 }

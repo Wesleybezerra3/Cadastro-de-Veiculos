@@ -63,3 +63,9 @@ a{
 a:hover{
     background-color: rgba(53, 52, 52, 0.788);
 }
+span{
+    font-size: 0.9em;
+    color: rgba(22, 22, 22, 0.849);
+    font-family: var(--Roboto);
+    font-weight: 500;
+}

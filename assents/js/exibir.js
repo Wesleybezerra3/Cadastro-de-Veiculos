@@ -22,15 +22,15 @@
       areaDeCadastrados.appendChild(h1);
 
       const pMarca = document.createElement("p");
-      pMarca.innerText = `MARCA: ${veiculo.marca}`;
+      pMarca.innerHTML = `<span>MARCA:</span> ${veiculo.marca}`;
       areaDeCadastrados.appendChild(pMarca);
 
       const pModelo = document.createElement("p");
-      pModelo.innerText = `MODELO: ${veiculo.modelo}`;
+      pModelo.innerHTML = `<span>MODELO:</span> ${veiculo.modelo}`;
       areaDeCadastrados.appendChild(pModelo);
 
       const pAno = document.createElement("p");
-      pAno.innerText = `ANO DE FABRICAÇÃO: ${veiculo.anoDeFabricacao}`;
+      pAno.innerHTML = `<span>ANO DE FABRICAÇÃO:</span> ${veiculo.anoDeFabricacao}`;
       areaDeCadastrados.appendChild(pAno);
 
       // Adicione uma linha em branco para separar os carros

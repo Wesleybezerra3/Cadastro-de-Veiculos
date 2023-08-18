@@ -4,6 +4,10 @@
   :root{
     --Roboto:'Roboto', sans-serif;
     --Rowdies:'Rowdies', cursive;
+    --first-color:#32659b;
+    --second-color:#F3A712;
+    --white:#ffff;
+    --black:#0A0908;
   }
 *{
     margin: 0;
@@ -46,7 +50,7 @@ input:hover{
  padding: 6px;
 }
 #btn{
-    background-color: rgb(50, 101, 155);
+    background-color: #32659b;
     color: #fff;
     font-size: 1.1em;
     font-weight: bold;
@@ -81,7 +85,7 @@ a{
     color: #fff;
     font-size: 1.1em;
     font-weight: bold;
-    width: 10em;
+    width: 8em;
     border-radius: 10px;
     border: none;
     outline: none;

@@ -1,99 +1,214 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap');
-
-  :root{
-    --Roboto:'Roboto', sans-serif;
-    --Rowdies:'Rowdies', cursive;
-    --first-color:#32659b;
-    --second-color:#F3A712;
-    --white:#ffff;
-    --black:#0A0908;
-  }
-*{
-    margin: 0;
-    padding: 0;
-}
-h1{
-    text-align: center;
-    font-family:var(--Roboto);
-    color: rgb(53, 52, 52);
-    padding: 20px;
-}
-section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    gap: 0.5em;
-    width: 80%;
-    margin: auto;
-    border-radius: 20px;
-}
-.buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-input{
-    width: 80%;
-    height: 20px;
-    font-family: var(--Roboto);
-    font-size: 1em;
-    padding: 5px;
-    border: 1px solid;
-    border-radius: 5px;
-    outline: none;
-    transition-duration: 0.5px;
-}
-input:hover{
- padding: 6px;
-}
-#btn{
-    background-color: #32659b;
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: bold;
-    width: 10em;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-#btn:hover{
-    background-color: rgb(25, 55, 87);
-}
-label{
-    font-family: var(--Rowdies);
-    font-size: 1.2em;
-    font-weight: 200;
-    color: rgb(53, 52, 52);
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    display: block;
-    margin: auto;
-    margin-top: 100px;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(199, 25, 25);
-    color: #fff;
-    font-size: 1.1em;
-    font-weight: bold;
-    width: 8em;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    
-    transition-duration: 0.5s;
-    cursor: pointer;
-  
+body {
+  margin-bottom: 500px;
+  background-color: aliceblue;
 }
-a:hover{
-    background-color: rgb(158, 16, 16);
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.267);
 }
+header img {
+  margin: auto;
+  width: 40%;
+  max-width: 600px;
+  cursor: pointer;
+}
+.links, header a {
+  margin: 20px 10px;
+  padding: 8px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background-color: #416388;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.links:hover, header a:hover {
+  background-color: #264d77;
+}
+
+main h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Belleza", sans-serif;
+  font-weight: bold;
+  color: #f3a712;
+}
+main .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-family: "Belleza", sans-serif;
+  margin: 20px 0;
+  color: #416388;
+}
+main .heroSection {
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+  width: 70%;
+}
+main .heroSection img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.vehicleDetail {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background-color: #416388;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+  gap: 1.1em;
+  padding: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.274);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+.vehicleDetail p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: white;
+}
+.vehicleDetail p span {
+  font-size: 1em;
+  font-family: var(--Roboto);
+  font-weight: 600;
+}
+.vehicleDetail .divIcon {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+.vehicleDetail .divIcon .fa-trash, .vehicleDetail .divIcon .fa-car {
+  font-size: 2em;
+  padding: 10px;
+  color: rgb(204, 27, 27);
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+.vehicleDetail .divIcon .fa-trash:hover, .vehicleDetail .divIcon .fa-car:hover {
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 50px;
+}
+.vehicleDetail .divIcon .fa-car {
+  color: rgb(16, 158, 16);
+}
+.vehicleDetail .vehicleDetailHeader span {
+  color: #f3a712;
+}
+.vehicleDetail .vehicleDetailHeader h1 {
+  color: white;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+.vehicleDetail .vehicleDetailHeader p {
+  font-size: 1em;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5em;
+}
+.container input {
+  width: 90%;
+  max-width: 700px;
+  height: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  padding: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.521);
+  border-radius: 8px;
+  transition-duration: 0.5s;
+}
+.container input:focus {
+  border: 1px solid #416388;
+  padding: 8px;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Belleza", sans-serif;
+  margin: 20px 0;
+  color: #416388;
+}
+
+#btn {
+  background-color: #416388;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+#btn:hover {
+  background-color: rgb(29, 73, 119);
+}
+
+label {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: rgb(53, 52, 52);
+}
+
+a {
+  margin: auto;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #f3a712;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #416388;
+}
+
+/*# sourceMappingURL=style.css.map */

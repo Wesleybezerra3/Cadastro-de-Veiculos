@@ -53,7 +53,7 @@
 
         if (confirmar) {
           const veiculos = getLocalStorage();
-          const articleElement = el.closest(".veiculos"); // Encontra o elemento <article> pai do botão
+          const articleElement = el.closest(".vehicleDetail"); // Encontra o elemento <article> pai do botão
 
           if (articleElement) {
             const index = Array.from(

@@ -17,7 +17,7 @@
       km.value === "" ||
       valor.value === ""
     ) {
-      alert("Preencha os campos da maneira correta!");
+      alert("Preencha os campos da corretamente!");
       return;
     }
     pushArr();

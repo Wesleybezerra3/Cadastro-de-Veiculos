@@ -7,7 +7,6 @@
 
 body {
   margin-bottom: 500px;
-  background-color: aliceblue;
 }
 
 header {
@@ -20,7 +19,7 @@ header {
 }
 header img {
   margin: auto;
-  width: 40%;
+  width: 60%;
   max-width: 600px;
   cursor: pointer;
 }

@@ -5,31 +5,54 @@
   const marca = document.querySelector("#marca");
   const modelo = document.querySelector("#modelo");
   const anoDeFabricacao = document.querySelector("#anoDeFabricacao");
-  const km = document.querySelector('#km');
-  const valor = document.querySelector('#valor');
+  const km = document.querySelector("#km");
+  const valor = document.querySelector("#valor");
+  const cambio = document.querySelector("#cambio");
+  const combus = document.querySelector("#combus");
+  const carroceria = document.querySelector("#carroceria");
+  const cor = document.querySelector("#cor");
+  const finalPlaca = document.querySelector("#finalPlaca");
+  const obs = document.querySelector('#obs');
   const btn = document.querySelector("#btn");
 
   btn.addEventListener("click", () => {
-    if (
-      marca.value === "" ||
-      modelo.value === "" ||
-      anoDeFabricacao.value === "" ||
-      km.value === "" ||
-      valor.value === ""
-    ) {
+    if (verify()) {
       alert("Preencha os campos da corretamente!");
       return;
     }
     pushArr();
     clearInputs();
-    alert('Veiculo cadastrado com sucesso!')
+    alert("Veiculo cadastrado com sucesso!");
   });
-  function Cadastro(marca, modelo, anoDeFabricacao,km,valor) {
+
+  const verify = () => {
+    //Função para verificar se há algum campo vazio.
+    return (
+      marca.value === "" ||
+      modelo.value === "" ||
+      anoDeFabricacao.value === "" ||
+      km.value === "" ||
+      valor.value === "" ||
+      cambio.value === "" ||
+      combus.value === "" ||
+      carroceria.value === "" ||
+      cor.value === "" ||
+      finalPlaca.value === ""
+    );
+  };
+  function Cadastro(marca,modelo,anoDeFabricacao,km,valor,cambio,combus,carroceria,cor,finalPlaca,obs) {
     this.marca = marca;
     this.modelo = modelo;
     this.anoDeFabricacao = anoDeFabricacao;
     this.km = km;
     this.valor = valor;
+    this.cambio = cambio;
+    this.combus = combus;
+    this.carroceria = carroceria;
+    this.cor = cor;
+    this.finalPlaca = finalPlaca;
+    this.obs = obs;
+
   } // Função construtora, Vai criar um objeto com os dados acima
 
   function clearInputs() {
@@ -38,6 +61,12 @@
     anoDeFabricacao.value = "";
     km.value = "";
     valor.value = "";
+    cambio.value = ""; 
+    combus.value = "";
+    carroceria.value = "";
+    cor.value = "";
+    finalPlaca.value = "";
+    obs.value = "";
 
     marca.focus();
     // Vai limpar os inputs e reidirecionar para o primeiro.
@@ -49,6 +78,12 @@
       anoDeFabricacao.value,
       km.value,
       valor.value,
+      cambio.value,
+      combus.value,
+      carroceria.value,
+      cor.value,
+      finalPlaca.value,
+      obs.value,
     );
     arr.push(veiculos);
     save();

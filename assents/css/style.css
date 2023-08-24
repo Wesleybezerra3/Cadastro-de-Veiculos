@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
 * {
@@ -66,6 +67,7 @@ main .heroSection {
   flex-direction: column;
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   width: 70%;
+  max-width: 1200px;
 }
 main .heroSection img {
   width: 100%;
@@ -78,6 +80,7 @@ main .heroSection img {
   flex-direction: column;
   background-color: #416388;
   width: 90%;
+  max-width: 1200px;
   border-radius: 10px;
   margin: auto;
   margin-bottom: 50px;
@@ -86,16 +89,21 @@ main .heroSection img {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.274);
   border-bottom: 1px solid rgba(0, 0, 0, 0.137);
 }
-.vehicleDetail p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
-  font-weight: normal;
-  color: white;
+.vehicleDetail .vehicleDetailHeader span {
+  color: #f3a712;
 }
-.vehicleDetail p span {
+.vehicleDetail .vehicleDetailHeader h1 {
+  color: white;
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+.vehicleDetail .vehicleDetailHeader p {
   font-size: 1em;
-  font-family: var(--Roboto);
-  font-weight: 600;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
 }
 .vehicleDetail .divIcon {
   display: flex;
@@ -118,21 +126,68 @@ main .heroSection img {
 .vehicleDetail .divIcon .fa-car {
   color: rgb(16, 158, 16);
 }
-.vehicleDetail .vehicleDetailHeader span {
-  color: #f3a712;
+
+.containerVehicle {
+  justify-content: space-between;
+  width: 100%;
 }
-.vehicleDetail .vehicleDetailHeader h1 {
-  color: white;
-  font-family: "Rowdies", cursive;
-  font-weight: 400;
-  font-size: 1.6em;
+.containerVehicle .vehicleMain {
+  width: 70%;
+  column-count: 2;
 }
-.vehicleDetail .vehicleDetailHeader p {
-  font-size: 1em;
-  margin-top: 10px;
+.containerVehicle .vehicleMain p {
+  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: bold;
   color: white;
+  padding: 10px;
+}
+.containerVehicle .vehicleMain p span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.8em;
+  font-family: var(--Roboto);
+  font-weight: 400;
+}
+.containerVehicle .vehicleObs {
+  width: 100%;
+  align-self: flex-start;
+  background-color: white;
+  border-radius: 11px 11px 11px 11px;
+}
+.containerVehicle .vehicleObs summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px white;
+  list-style: none;
+}
+.containerVehicle .vehicleObs summary p {
+  font-family: "Rowdies", cursive;
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: #416388;
+}
+.containerVehicle .vehicleObs .fa-circle-arrow-down {
+  font-size: 1.8em;
+  color: #f3a712;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 10px;
+  transition-duration: 0.4s;
+}
+.containerVehicle .vehicleObs article {
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(53, 53, 53);
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1.5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.253);
 }
 
 * {
@@ -143,26 +198,61 @@ main .heroSection img {
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.container div {
+  display: flex;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   gap: 0.5em;
 }
-.container input {
-  width: 90%;
-  max-width: 700px;
+.container div label {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: rgb(53, 52, 52);
+}
+.container div input {
+  width: 96%;
+  max-width: 900px;
   height: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
   padding: 5px;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.521);
-  border-radius: 8px;
+  border-radius: 5px;
   transition-duration: 0.5s;
 }
-.container input:focus {
-  border: 1px solid #416388;
-  padding: 8px;
+
+.containerObs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+}
+.containerObs label {
+  font-family: "Rowdies", cursive;
+  font-weight: 400;
+  color: rgb(53, 52, 52);
+}
+.containerObs #obs {
+  width: 90%;
+  height: 150px;
+  outline: none;
+  padding: 10px;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+}
+
+.containerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .title {
@@ -192,13 +282,8 @@ main .heroSection img {
   background-color: rgb(29, 73, 119);
 }
 
-label {
-  font-family: "Rowdies", cursive;
-  font-weight: 400;
-  color: rgb(53, 52, 52);
-}
-
 a {
+  display: block;
   margin: auto;
   border-radius: 10px;
   text-decoration: none;
@@ -208,6 +293,91 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #416388;
+}
+
+@media (min-width: 750px) {
+  .container {
+    flex-direction: row;
+  }
+  .containerVehicle {
+    display: flex;
+  }
+}
+.loader {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgb(255, 255, 255);
+}
+
+.animated {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.containerLogo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100px; /* Ajuste a altura conforme necessário */
+}
+.containerLogo img {
+  position: absolute;
+  width: 500px;
+  right: 100%;
+  animation: moveLeft 8s forwards;
+}
+@keyframes moveLeft {
+  from {
+    right: 100%;
+  }
+  to {
+    right: -800px;
+  }
+}
+
+@keyframes move {
+  from {
+    right: 0px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.wheel {
+  fill: rgb(128, 128, 128);
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 6em;
+  text-align: center;
+  animation: rolling 1s linear infinite;
+}
+
+#rim {
+  fill: rgb(126, 126, 126);
+}
+
+#tire {
+  fill: rgb(55, 55, 55);
+}
+
+@keyframes rolling {
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
